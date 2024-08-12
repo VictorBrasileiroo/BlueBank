@@ -1,4 +1,4 @@
-//FUNÇÃO DE MODIFICAÇÃO DE HEADER 
+//FUNÇÃO DE MODIFICAÇÃO DE HEADER PRIMEIRA FUNÇÃO
     function scrollHeader(){
         const nav = document.getElementById('header');
 

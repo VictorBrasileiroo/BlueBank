@@ -1,0 +1,393 @@
+@import "colors";
+@import "layout";
+
+header{
+    width: 100%;
+    height: 72px;
+    background-color: transparent;
+    box-shadow: none;
+
+    position: fixed;
+    //Max-zindex
+    z-index: 999;
+    transition: .3s ease all;
+}
+
+.active_header{
+    background-color: $white-normal;
+    box-shadow: 0px 20px 50px 0px rgba(38, 158, 151, 0.08);
+}
+
+
+
+//DESKTOP
+.nav_desktop{
+    
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: 10px 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive(s){
+        display: none;
+    }
+}
+
+.logo{
+    z-index: 999;
+    width: 36px;
+    height: 52px;
+    transition: .3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.nav_desktop_item-1{
+ flex: 1 1 auto;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+}
+
+.nav_desktop_item-2{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu_desktop{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+
+    .menu_desktop_item{
+        margin-left: 1rem;
+        position: relative;
+    }
+
+}
+
+.nav_link_desktop{
+    display: inline-block;
+    padding: 12px 16px;
+
+    position: relative;
+
+    &::after{
+
+        transition: .1s;
+        transform: rotate(45deg);
+
+        content:  '';
+        position: absolute;
+        top: 42%;
+        right: -3px;
+        border-bottom: 2px solid $primary-normal;
+        border-right: 2px solid $primary-normal;
+        border-radius: 1px;
+
+
+        width: 7px;
+        height: 7px;
+    }
+
+    &:hover{
+        &::after{
+            top: 45%;
+        }
+    }
+}
+
+.dropdown_menu{
+    opacity: 0;
+    pointer-events: none;
+    background-color: white;
+    border-radius: 1rem;
+    transition: 0.3s;
+
+    box-shadow: 0px 12.963px 18.088px 0px rgba(38, 158, 151, 0.09), 0px 5.384px 7.513px 0px rgba(38, 158, 151, 0.07), 0px 1.947px 2.717px 0px rgba(38, 158, 151, 0.03);
+
+    list-style: none;
+    position: absolute;
+    top: 46px;
+    left: 12px;
+
+    padding: 16px 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .dropdown_item{
+        width: 100%;
+    }
+}
+
+
+.nav_link_dropdown{
+    display: inline-block;
+    width: 100%;
+
+    padding: 8px 16px;
+    position: relative;
+
+    &::after{
+
+        transition: .5s ease;
+
+        content:  '';
+        position: absolute;
+        top: 90%;
+        left: 0;
+
+        width: 0%;
+        height: 2px;
+
+        background-color: $secondary-normal;
+    }
+
+    &:hover{
+        &::after{
+            width: 100%;
+        }
+    }
+}
+
+.activeDropdown{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+//MOBILE ===================================
+.nav_mobile{
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: 10px 24px;
+    display: none;
+
+    @include responsive(s){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.bx{
+    width: 36px;
+    height: 36px;
+    position: relative;
+    cursor: pointer;
+    z-index: 800;
+    transition: .3s ease;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 2.5px;
+        background-color: $primary-normal;
+        top: 40%;
+        left: 15%;
+        transition: .3s ease;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 2.5px;
+        background-color: $primary-normal;
+        top: 65%;
+        left: 15%;
+        transition: .3s ease;
+    }
+}
+
+.active_bx{
+    width: 36px;
+    height: 36px;
+    position: relative;
+    cursor: pointer;
+    z-index: 800;
+    transition: .7s ease;
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        background-color: $primary-normal;
+        top: 50%;
+        left: 15%;
+        transform: rotate(-135deg);
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        background-color: $primary-normal;
+        top: 50%;
+        left: 15%;
+        transform: rotate(-45deg);
+    }
+    
+}
+
+
+
+.menu_mobile{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: $white-normal;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transform: translate3d(0,-100px,0);
+    transition: .5s ease;
+
+}
+
+.nav_list_mobile{
+    max-width: $container-xl;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    svg{
+        width: 40px;
+        height: 40px;
+        
+
+        path{
+            stroke: $gray-2;
+            transition: .3s ease;
+        }
+
+        &:hover{
+            path{
+                stroke: $primary-normal;
+            }
+        }
+    }
+
+    .nav_link_mobile{
+        display: inline-block;
+        
+        @include typeface-1(h4, desktop);
+        color: $gray-2;
+        padding: 16px 24px;
+        position: relative;
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 80%;
+            background-color: $secondary-normal;
+            left: 24px;
+            height: 2px;
+            width: 0%;
+            transition: 0.6s ease;
+
+        }
+
+        &:hover{
+            color: $primary-normal;
+
+            &::after{
+                width: 100%;
+            }
+        }
+        
+    }
+    
+}
+
+.active_menu_mobile{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.login_mobile{
+    z-index:999;
+}
+
+.icons_hero{
+    display: flex;
+    flex-direction: row;
+}
+
+.section_people{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 200;
+
+    @include responsive(s){
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .pht-2{
+        animation: opacityphotos ease 5s 8s infinite alternate;
+    }
+    .pht-3{
+        animation: opacityphotos ease 5s 4s infinite alternate;
+    }
+
+    
+    @keyframes opacityphotos{
+        0%{
+            opacity: 100%;
+        }
+        100%{
+            opacity: 0%;
+        }
+    }
+}
+
+.section_photos_people{
+    width: 100%;
+    overflow: hidden;
+
+    img{
+        position: absolute;
+        z-index: 700;
+        width: 280px;
+        height: 360px;
+    }
+}
+
+
+.list_item{
+    list-style: none;
+    h4{
+        color: $primary-normal;
+    }
+}

@@ -1081,6 +1081,123 @@ svg, img {
   border: 1px solid red;
 }
 
+.box {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 64px 48px;
+}
+@media screen and (max-width: 960px) {
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.container-swiper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 24px;
+  padding-bottom: 96px;
+  padding-top: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  max-width: 420px;
+  margin: 0px 8px;
+  padding: 16px 36px;
+  border-radius: 50px;
+  background-color: #eef2f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 960px) {
+  .swiper-slide {
+    margin: 0;
+  }
+}
+
+.button-next {
+  position: absolute;
+  right: 32px;
+  top: 24px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background-image: url(../svg/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.button-prev {
+  position: absolute;
+  right: 75px;
+  top: 25px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background-image: url(../svg/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+}
+
+.photo-profile {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-image: url("../img/0SbeqPbLSOA.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide h4 {
+  margin-top: 16px;
+}
+
+.photo-1 {
+  background-image: url("../img/0Zx1bDv5BNY.png");
+}
+
+.photo-2 {
+  background-image: url("../img/9MoQKZW0nGU.png");
+}
+
+.photo-3 {
+  background-image: url("../img/95UF6LXe-Lo.png");
+}
+
+.photo-4 {
+  background-image: url("../img/0SbeqPbLSOA.png");
+}
+
+.photo-5 {
+  background-image: url("../img/9MoQKZW0nGU.png");
+}
+
+.photo-6 {
+  background-image: url("../img/95UF6LXe-Lo.png");
+}
+
+.photo-7 {
+  background-image: url("../img/0SbeqPbLSOA.png");
+}
+
 .dropshadow {
   filter: drop-shadow(0px 16px 16px rgba(22, 147, 141, 0.15));
 }

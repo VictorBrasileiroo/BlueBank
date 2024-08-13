@@ -6,6 +6,10 @@
     <title>BlueBank</title>
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgi7adIKCPAAGV0GPYNyF73IEUDajppreg3Q&s" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <script src="svg/svg-inject.min.js"></script>
 </head>
 <body>
@@ -162,10 +166,78 @@
         </div>
      </section>
 
-     <!-- ========== SECTION BEST ========== -->
-
+     <!-- ========== SECTION SLIDER ========== -->
+     <section class="box">
+        <h5>Depoimentos</h5>
+        <h2>Todos amam o <span class="azul">Blue</span></h2>
+     </section>
+     <section class="container-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-1"></div>
+                    <h4>Isadora Cristina</h4>
+                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore fuga hic vel pariatur necessitatibus aspernatur.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-2"></div>
+                    <h4>Victor Brasileiro</h4>
+                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore fuga hic vel pariatur necessitatibus aspernatur.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-3"></div>
+                    <h4>Alexandre Magno</h4>
+                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore fuga hic vel pariatur necessitatibus aspernatur.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-4"></div>
+                    <h4>Tobias Martins</h4>
+                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore fuga hic vel pariatur necessitatibus aspernatur.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-5"></div>
+                    <h4>Maria Helena</h4>
+                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore fuga hic vel pariatur necessitatibus aspernatur.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-6"></div>
+                    <h4>Junior Pinheiro</h4>
+                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore fuga hic vel pariatur necessitatibus aspernatur.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-7"></div>
+                    <h4>Isabel Cristina</h4>
+                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil labore fuga hic vel pariatur necessitatibus aspernatur.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+     </section>
 
     <!-- ========== JS ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
+
+
+    <!-- Script Padrão de Slider -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 40, // Corrigido
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar', // Corrigido
+            },
+            navigation: {
+                nextEl: '.button-next', // Corrigido
+                prevEl: '.button-prev', // Corrigido
+            },
+        });
+    </script>
+    
 </body>
 </html>

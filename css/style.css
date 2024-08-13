@@ -1684,6 +1684,45 @@ header {
   color: #269E97;
 }
 
+.container_account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .container_account {
+    flex-direction: column;
+    padding: 0px 0px;
+  }
+}
+
+.account_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  gap: 24px;
+}
+@media screen and (max-width: 960px) {
+  .account_text h2 {
+    font-size: 32px;
+  }
+}
+
+.account_img {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 960px) {
+  .account_img {
+    width: 65%;
+  }
+}
+
 .div_card {
   perspective: 800px;
   position: relative;

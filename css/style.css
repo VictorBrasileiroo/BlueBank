@@ -1582,6 +1582,12 @@ header {
   animation: flip-card 4s linear infinite alternate, change-bg-card 4s linear infinite alternate;
   z-index: -1;
 }
+@media screen and (max-width: 960px) {
+  .card {
+    width: 250px;
+    height: 160px;
+  }
+}
 
 @keyframes flip-card {
   0% {
@@ -1616,38 +1622,38 @@ header {
 }
 @media screen and (max-width: 960px) {
   .icon_card_hero {
-    top: 160px;
-    left: 124px;
+    top: 264px;
+    left: 102px;
     filter: none;
   }
 }
 
 .icon_mobile_hero {
   position: absolute;
-  top: -50px;
+  top: -30px;
   left: -30px;
   z-index: 999;
   animation: icons-hero ease 5s 1s infinite alternate;
 }
 @media screen and (max-width: 960px) {
   .icon_mobile_hero {
-    top: 36px;
-    left: -164px;
+    top: 246px;
+    left: -124px;
     filter: none;
   }
 }
 
 .icon_cash_hero {
   position: absolute;
-  top: 150px;
-  left: -200px;
+  top: 190px;
+  left: -190px;
   z-index: 999;
   animation: icons-hero ease 5s 2.5s infinite alternate;
 }
 @media screen and (max-width: 960px) {
   .icon_cash_hero {
-    top: -32px;
-    left: 122px;
+    top: 45px;
+    left: 32px;
     filter: none;
   }
 }

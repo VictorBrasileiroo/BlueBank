@@ -2,7 +2,7 @@
 
 <img src="img/Captura de tela 2024-08-12 230259.png" alt="">
 
-###Link da hospedagem do projeto:
+### Link da hospedagem do projeto:
 https://victorbrasileiroo.github.io/BlueBank/
 
 ### Ajustes e melhorias

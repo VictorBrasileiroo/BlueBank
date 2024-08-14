@@ -1,6 +1,6 @@
 # BlueBank
 
-<img src="img/Captura de tela 2024-08-12 230259.png" alt="">
+<img src="img/captura blue.png" alt="">
 
 ### Link da hospedagem do projeto:
 https://victorbrasileiroo.github.io/BlueBank/

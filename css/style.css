@@ -1689,9 +1689,26 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 @media screen and (max-width: 960px) {
   .container_account {
+    flex-direction: column;
+    padding: 0px 0px;
+  }
+}
+
+.container_cards {
+  padding: 200px 28px;
+  padding-left: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 960px) {
+  .container_cards {
     flex-direction: column;
     padding: 0px 0px;
   }
@@ -1702,11 +1719,33 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 60%;
+  gap: 24px;
+}
+@media screen and (max-width: 960px) {
+  .account_text {
+    justify-content: center;
+    align-items: center;
+  }
+  .account_text h2 {
+    font-size: 32px;
+  }
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 50%;
   gap: 24px;
 }
 @media screen and (max-width: 960px) {
-  .account_text h2 {
+  .card_text {
+    align-items: center;
+    justify-content: center;
+  }
+  .card_text h2 {
     font-size: 32px;
   }
 }
@@ -1723,6 +1762,65 @@ header {
   }
 }
 
+.card_cards {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 960px) {
+  .card_cards {
+    width: 95%;
+  }
+}
+
+.container_queroserblue {
+  margin-bottom: 48px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  gap: 24px;
+}
+.container_queroserblue p {
+  width: 80%;
+}
+
+.div_card {
+  perspective: 800px;
+  position: relative;
+}
+
+.card_2 {
+  width: 340px;
+  height: 217.6px;
+  background-image: url("../svg/nubank-black.svg");
+  background-size: cover;
+  border-radius: 1rem;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+  background-color: #269E97;
+  animation: flip-card_2 8s linear infinite alternate;
+  z-index: -1;
+}
+@media screen and (max-width: 960px) {
+  .card_2 {
+    width: 300px;
+    height: 190px;
+  }
+}
+
+@keyframes flip-card_2 {
+  0% {
+    transform: rotateX(-20deg) rotateY(20deg);
+  }
+  100% {
+    transform: rotateX(30deg) rotateY(-20deg);
+  }
+}
 .div_card {
   perspective: 800px;
   position: relative;

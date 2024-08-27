@@ -14,7 +14,6 @@ BlueBank é um projeto de site para um banco digital fictício. O site oferece i
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Como Executar](#como-executar)
-- [Estrutura do Projeto](#estrutura-do-projeto)
 
 ## Visão Geral
 

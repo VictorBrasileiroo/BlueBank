@@ -6,7 +6,7 @@ BlueBank é um projeto de site para um banco digital fictício. O site oferece i
 
 <img src="img/captura blue.png" alt="">
 
-### Acesse o site aqui <a href="https://victorbrasileiroo.github.io/BlueBank/">Clique Aqui❗</a>
+## Acesse o site aqui <a href="https://victorbrasileiroo.github.io/BlueBank/">Clique Aqui❗</a>
 
 ## Índice
 
@@ -42,6 +42,6 @@ O BlueBank é um banco digital que proporciona uma experiência completa para os
 ## Como Executar
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/bluebank.git
+   git clone https://github.com/VictorBrasileiroo/BlueBank.git
 
-## Este projeto foi criado exclusivamente para fins educacionais, inspirado no projeto da Nubank do curso Front-PUSH.
+Este projeto foi criado exclusivamente para fins educacionais, inspirado no projeto da Nubank do curso Front-PUSH.

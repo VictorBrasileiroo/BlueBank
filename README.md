@@ -8,8 +8,6 @@ BlueBank é um projeto de site para um banco digital fictício. O site oferece i
 
 ### Acesse o site aqui <a href="https://victorbrasileiroo.github.io/BlueBank/">Clique Aqui❗</a>
 
-# BlueBank
-
 ## Índice
 
 - [Visão Geral](#visão-geral)
